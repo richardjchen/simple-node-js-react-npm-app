@@ -1,0 +1,71 @@
+Key Application Frameworks Evaluated
+==============================================================
+Copyright © 2019 Accenture. All rights reserved.    
+-  **Spring Cloud Function** -- *Goals of the project*
+    -   Promote the implementation of business logic via functions
+    -   Decouple the development lifecycle of business logic from any specific runtime target so that the same code can run as a web endpoint, a stream processor, or a task
+    - Support a uniform programming model across serverless providers, as well as the ability to run standalone (locally or in a PaaS)
+    -Enable Spring Boot features (auto-configuration, dependency injection, metrics) on serverless providers
+-  **Spring Web Flux**
+    - Support for reactive-stack web applications built on a Reactive Streams API to run on non-blocking servers, such as Netty, Undertow, and Servlet 3.1+ containers
+- **Spring Kotlin Functional**
+    - Spring Web Flux with Kotlin
+    - Programmatic Bootstrap of Spring WebFlux application
+    - Spring Kotlin Support
+    - Reactor Kotlin Support
+    - Null Safety of Spring and Reactor API
+    - WebFlux Reactive web server and client
+    - Functional bean definition with Kotlin DSL (no reflection, no CGLIB proxies involved)
+    - WebFlux functional routing declaration with Kotlin DSL
+    - WebFlux and Reactor Netty native embedded server capabilities
+    - Gradle Kotlin DSL
+    - Junit 5 @BeforeAll and @AfterAll on non-static methods in Kotlin
+- **Spring Fu**
+    - Explicit configuration via Kotlin or Java DSL instead of annotations
+    - Minimal set of features enabled by default
+    - No classpath scanning, no feature enabled based on classpath detec
+    - Both declarative (via the DSL) and programmatic (code auto-complete, allow any kind of if, for statements)
+    - Functional configuration based on pure lambdas
+    - Minimal reflection usage, no CGLIB proxy, no annotation processing
+    - Faster startup and lower memory consumption
+- **Spring Cloud Config**
+    - Spring Cloud Config Server features
+        - HTTP, resource-based API for external configuration (name-value pairs, or equivalent YAML content)
+        - Encrypt and decrypt property values (symmetric or asymmetric)
+        - Embeddable easily in a Spring Boot application using @EnableConfigServer
+    - Sping Cloud Config Client features
+        - Bind to the Config Server and initialize Spring Environment with remote property sources
+        - Encrypt and decrypt property values (symmetric or asymmetric)
+- **Azure Key Vault Secrets Spring Boot Started**
+    - Azure Key Vault Secrets Spring boot starter is Spring starter for Azure Key Vault Secrets
+    - With this starter, Azure Key Vault is added as one of Spring PropertySource, so secrets stored in Azure Key Vault could be easily used and conveniently accessed like other externalized configuration property, e.g. properties in files
+- **Reactive API for Kafka**
+    - Reactor Kafka is a reactive API for Kafka based on Reactor and the Kafka Producer/Consumer API
+    - Reactor Kafka API enables messages to be published to Kafka and consumed from Kafka using functional APIs with non-blocking back-pressure and very low overheads
+    - This enables applications using Reactor to use Kafka as a message bus or streaming platform and integrate with other systems to provide an end-to-end reactive pipeline
+- **Kotlin Coroutines**
+- **Reactive Hystrix**
+    - Give protection from and control over latency and failure from dependencies accessed (typically over the network) via third-party client libraries
+    - Stop cascading failures in a complex distributed system
+    - Fail fast and rapidly recover
+    - Fallback and gracefully degrade when possible
+    - Enable near real-time monitoring, alerting, and operational control
+- **Jedis**
+    - Key Features - Sorting, Connection handling, Commands operating on any kind of values, Commands operating on string values, Commands operating on hashes, Commands operating on lists, Commands operating on sets, Commands operating on sorted sets, Transactions, Pipelining, Publish/Subscribe, Persistence control commands, Remote server control commands, Connection pooling, , Sharding (MD5, MurmurHash), Key-tags for sharding, Sharding with pipelining, Scripting with pipelining, Redis Cluster
+- **Reactor Core**
+    - Reactor is a fully non-blocking reactive programming foundation for the JVM, with efficient demand management (in the form of managing "backpressure"). It integrates directly with the Java 8 functional APIs, notably CompletableFuture, Stream, and Duration. It offers composable asynchronous sequence APIs Flux (for [N] elements) and Mono (for [0|1] elements), extensively implementing the [Reactive Streams](http://www.reactive-streams.org/) specification
+    - Reactor also supports non-blocking inter-process communication with the reactor-netty project. Suited for Microservices Architecture, Reactor Netty offers backpressure-ready network engines for HTTP (including Websockets), TCP, and UDP. Reactive Encoding and Decoding are fully supported
+- **Unit and Assembly Testing**
+    - Reactor test
+    - Spring WebFlux test
+    - JUnit5
+    - Embedded Redis
+    - Spring Framework test
+    - AssertJ
+    - Kotlin test
+    - Grpc testing
+    - mockk
+- **Protobuf**
+    - Protocol buffers are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data 
+- **gRPC**
+    - gRPC is based around the idea of defining a service, specifying the methods that can be called remotely with their parameters and return types
